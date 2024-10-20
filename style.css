@@ -1,0 +1,46 @@
+.title{
+    border: 2px solid black;
+}
+.container{
+    display: grid;
+    grid-template-columns: 3rem auto 15rem;
+    
+
+}
+
+.aside{
+    background-color:black;
+    color:white;
+    border:2px solid white;
+}
+
+h1{
+    border: 2px solid black;
+    
+   
+}
+.right{
+    background-color: black;
+    color:white;
+    border:2px solid white;
+}
+body{
+    background-color:darkkhaki;
+}
+.icon-container {
+    display: flex;
+    flex-direction: column;
+}
+.material-symbols-outlined{
+    font-size: 30px;
+    margin: 9px 0;
+    color:whites
+}
+.material-symbols-outlined:hover{
+    font-size: 40px;
+}
+
+
+
+
+    
