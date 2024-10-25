@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,48 +7,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css"> 
-
+    <title>DASHBOARD</title>
 </head>
 <body>
     <div class="container">
-         <div class="aside">
-            <h1>ID</h1>
-            <div class="icon-container">
-                <span class="material-symbols-outlined">login</span>
-                <span class="material-symbols-outlined">account_circle</span>
-                <span class="material-symbols-outlined">search</span>
-                <span class="material-symbols-outlined">grid_view</span>
-                <span class="material-symbols-outlined">home</span>
-                <span class="material-symbols-outlined">monitoring</span>
-                <span class="material-symbols-outlined">settings</span>
-                <span class="material-symbols-outlined">notifications</span>
-                <span class="material-symbols-outlined">support_agent</span>
-                <span class="material-symbols-outlined">delete</span>
-                <span class="material-symbols-outlined">close</span>
+        <!-- aside starts  -->
+        <aside>
+            <!-- top starts  -->
+            <div class="top">
+                <div class="logo">
+                    <h2>ID - <span class="danger">SHRETIMA</span></h2>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+            <!-- top ends  -->
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-symbols-outlined">person_outline</span>
+                    <h3>Customer</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">monitoring</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">mail_outline</span>
+                    <h3>Message</h3>
+                    <span class="msg_count">20</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">support_agent</span>
+                    <h3>Helpline</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Setting</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- aside ends  -->
+        <!-- main starts -->
+          <main>
+            <h1>Dashboard</h1>
+            <div class="insights">
+                <!-- starts selling -->
+                 <div class="sales">
+                    <span class="material-symbols-outlined">trending_up</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>Rs 3,00,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">75%</div>
+                        </div>
+                    </div>
+                    <small>Last 48 Hours</small>
+                 </div>
+                <!-- end selling -->
+                <!-- starts expenses -->
+                <div class="expenses">
+                <span class="material-symbols-outlined">local_mall</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Expenses</h3>
+                        <h1>Rs 70,000</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">80%</div>
+                    </div>
+                </div>
+                <small>Last 48 Hours</small>
+                </div>
+                <!-- end expenses -->
+                <!-- starts income -->
+                <div class="income">
+                <span class="material-symbols-outlined">stacked_line_chart</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Income</h3>
+                        <h1>Rs 2,30,000</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">100%</div>
+                    </div>
+                </div>
+                <small>Last 48 Hours</small>
+                </div>
+                <!-- end income -->
 
             </div>
+            <!-- end insight  -->
+            <!-- start recent order  -->
+             <div class="recent_order">
+                <h1>Recent Order</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WireWave</td>
+                            <td>560</td>
+                            <td>Arrived</td>
+                            <td class="success">Updated</td>
+                        </tr>
+                        <tr>
+                            <td>ConnectX</td>
+                            <td>373</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>DataBridge</td>
+                            <td>85</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>PulsePort</td>
+                            <td>544</td>
+                            <td>Arrived</td>
+                            <td class="success">Updated</td>
+                        </tr>
+                        <tr>
+                            <td>LinkSync</td>
+                            <td>932</td>
+                            <td>Updated</td>
+                            <td class="success">Updated</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>USB</td>
+                            <td>456</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+            <!-- end recent order  -->
             
 
-         </div>
-        
-            
-        
-        <div class="main">
-            <h1>DASHBOARD</h1>
-            <img src="https://media.licdn.com/dms/image/v2/C4E12AQGLiShVMzCsJg/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1520241384910?e=1733356800&v=beta&t=nSou9O1_qx-tX5TjzDQ_pEzs7NjP3zKLF_xtNwh4ua8" alt="Error" width="600px" height="300px">
-            <img src="https://www.researchgate.net/publication/336520853/figure/fig1/AS:813886211096576@1571057002341/Bar-chart-of-descriptive-statistics-for-financial-performance.ppm" alt="Error" width="600px"height="300px">
-            <img src="https://wpdatatables.com/wp-content/uploads/2023/08/financial-charts-and-graphs.jpg" alt="Error" width="600px" height="300px">
-            <img src="https://img.freepik.com/premium-vector/bar-chart-financial-report-presentation-business-statistic-data-analysis-chart-graph_530733-1403.jpg" alt="Error" width="600px" height="300px">
-        </div>
+          </main>
+        <!-- main ends  -->
+        <!-- right starts  -->
         <div class="right">
-            <h1>
-                Recent updates
-            </h1>
-            <img src="https://www.wikihow.com/images/thumb/f/f3/Sell-Stocks-on-Cash-App-Step-3.jpg/v4-460px-Sell-Stocks-on-Cash-App-Step-3.jpg.webp" alt="Error" width="240px" height="150px">
-            <img src="https://i.marketsmojo.com/newsimg/2024/9/AngelOne_priceRelatedfactors_196134.png" alt="Error" width="240px">
-            <img src="https://i.marketsmojo.com/newsimg/2024/10/SRF_priceRelatedfactors_212868.png" alt="Error" width="240px">
-            <img src="https://i.marketsmojo.com/newsimg/2024/6/GeojitFinancial_priceRelatedfactors_85694.png" alt="Error" width="240px">
+            <div class="top">
+                <button id="menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-outlined active">light_mode</span>
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p><b>Shretima</b></p>
+                        <p>Admin</p>
+                        <small class="text-muted"></small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-side-profile-cartoon-illustration_23-2150503834.jpg" alt="Error" >
+                    </div>
+                </div>
+                
+            </div>
+            <!-- end of top -->
+        <!-- recent update starts  -->
+        <div class="recent_updates">
+            <h2>Recent Updates</h2> 
+            <div class="update">
+                <div class="updates">
+                    <div class="profile-photo">
+                        <img src="https://media.tenor.com/VRgai5K7cbgAAAAe/package-packages.png" alt="Error">
+                    </div>
+                    <div class="message">
+                        <p><b>Shretima</b>Order is arriving today</p>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="profile-photo">
+                        <img src="https://images.freeimages.com/images/premium/previews/4884/48849020-cartoon-parcel.jpg" alt="Error">
+                    </div>
+                    <div class="message">
+                        <p><b>Shretima</b>Order is due</p>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="profile-photo">
+                        <img src="https://www.nicepng.com/png/detail/0-4981_free-green-tick-png-transparent-picture-tick-gif.png" alt="Error">
+                    </div>
+                    <div class="message">
+                        <p><b>Shretima</b>Recieved her order</p>
+                    </div>
+            </div>
+            </div>
+
         </div>
-    </div>  
+        <!-- end of recent updates  -->
+        <!-- start sale and analytic  -->
+        <div class="sales_analytics">
+            <h2>Sale Analytics</h2>
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </div>
+                <div class="right-text">
+                    <div class="info">
+                        <h3>Online Orders</h3>
+                        <small class="text-muted">Last seen 5 Hours</small>
+                    </div>
+                    <h5 class="danger">-89%</h5>
+                    <h3>847</h3>
+                </div>
+            </div>
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </div>
+                <div class="right-text">
+                    <div class="info">
+                        <h3>Online Orders</h3>
+                        <small class="text-muted">Last seen 8 Hours</small>
+                    </div>
+                    <h5 class="success">+34%</h5>
+                    <h3>3492</h3>
+                </div>
+            </div>
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </div>
+                <div class="right-text">
+                    <div class="info">
+                        <h3>Online Orders</h3>
+                        <small class="text-muted">Last seen 10 Hours</small>
+                    </div>
+                    <h5 class="danger">-67%</h5>
+                    <h3>742</h3>
+                </div>
+            </div>
+        </div>
+        <!-- end of sales analytic  -->
+        </div>
+    <!-- end of right section  -->
+    </div>
+    <!-- end of container  -->
+    
+
 </body>
 </html>
